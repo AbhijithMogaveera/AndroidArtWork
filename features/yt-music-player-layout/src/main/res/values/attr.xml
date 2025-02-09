@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlidingPanelLayout">
+        <attr name="debugTag" format="string" />
+    </declare-styleable>
+    <declare-styleable name="CustomScrollView">
+        <attr name="cs_item_width" format="dimension"/>
+        <attr name="cs_item_height" format="dimension"/>
+        <attr name="cs_item_large_width" format="dimension"/>
+        <attr name="cs_item_large_height" format="dimension"/>
+        <attr name="cs_item_margin" format="dimension"/>
+        <attr name="cs_scroll_factor" format="float"/>
+        <attr name="cs_scroll_item_least_distance" format="dimension"/>
+        <attr name="cs_scroll_speed" format="enum">
+            <enum name="slow" value="0" />
+            <enum name="normal" value="1"/>
+            <enum name="fast" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

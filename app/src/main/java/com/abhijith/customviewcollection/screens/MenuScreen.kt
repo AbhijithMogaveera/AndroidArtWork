@@ -23,6 +23,10 @@ fun MainMenu(
         MenuItem("CylinderGraph 📊") {
             onRouteSelection(SimpleRoutes.CYLINDER_SCREEN)
         }
+
+        MenuItem("Youtube Music Layout Clone 🎧") {
+            onRouteSelection(SimpleRoutes.YT_MUSIC_SCREEN)
+        }
     }
 }
 

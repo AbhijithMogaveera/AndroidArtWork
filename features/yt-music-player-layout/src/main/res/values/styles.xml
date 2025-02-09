@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="App"/>
+
+    <style name="Icon" parent="App"/>
+
+    <style name="App.Icon.Normal" parent="Icon">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:tint">@color/m_icon_tint</item>
+    </style>
+    <declare-styleable name="ParentPanel_Layout">
+        <attr name="android:offset"/>
+        <attr name="android:minHeight"/>
+        <attr name="android:layout_weight"/>
+    </declare-styleable>
+</resources>

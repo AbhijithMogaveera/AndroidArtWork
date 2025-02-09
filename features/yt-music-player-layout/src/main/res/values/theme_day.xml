@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="core_primary_color">@color/color_shark</color>
+    <color name="core_primary_surface_color">@color/color_bahama_blue</color>
+
+    <color name="core_secondary_color">@color/color_green_vogue</color>
+    <color name="core_secondary_surface_color">@color/color_my_sin</color>
+
+    <color name="core_small_card_surface">@color/color_porcelain</color>
+    <color name="core_state_unchecked">@color/color_grey</color>
+    <color name="core_state_checked">@color/color_shark</color>
+
+</resources>

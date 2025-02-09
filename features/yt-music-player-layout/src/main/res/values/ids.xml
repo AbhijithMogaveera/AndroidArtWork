@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="slidingPanel" type="id"/>
+    <item name="mainView" type="id"/>
+    <item name="view_scope" type="id" />
+    <item name="view_attach_detach_scope" type="id" />
+</resources>

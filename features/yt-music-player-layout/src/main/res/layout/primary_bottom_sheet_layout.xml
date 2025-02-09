@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="com.abhijith.music.components.player.screens.PrimaryBottomSheet">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/secondaryBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        app:cardBackgroundColor="@color/core_secondary_color"
+        app:cardCornerRadius="10dp">
+
+        <FrameLayout
+            android:id="@+id/tabsFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/transitionView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="top|start"
+        android:background="@drawable/round_orange_lg"
+        android:src="@drawable/dj_playing_song"
+        android:scaleType="centerCrop"
+        android:maxWidth="270dp"
+        android:minWidth="70dp"
+        app:cardCornerRadius="20dp" />
+
+    <com.abhijith.music.components.player.screens.MusicControllerView
+        android:id="@+id/controllerScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top" />
+
+</merge>

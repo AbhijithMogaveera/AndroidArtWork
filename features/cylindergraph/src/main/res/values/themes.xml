@@ -2,6 +2,6 @@
 <resources>
 
     <style name="Theme.CustomViewCollection" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="android:statusBarColor">@color/amethyst</item>
+        <item name="android:statusBarColor">@color/c_amethyst</item>
     </style>
 </resources>

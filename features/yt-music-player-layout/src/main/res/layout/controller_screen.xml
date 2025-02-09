@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/black"
+    tools:parentTag="com.abhijith.music.components.player.screens.MusicControllerView">
+
+    <include
+        android:id="@+id/expand_control_view"
+        layout="@layout/music_controllers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toTopOf="@id/tabPlaceHolder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bannerPlaceHolderExpand" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controller_screen_toolbar_height"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/bannerPlaceHolderCollapse"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/music_playing_progress" />
+
+        <!--Collapse state views-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivPause2"
+            app:layout_constraintStart_toEndOf="@id/bannerPlaceHolderCollapse"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSongTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Lorem ipusm dolor"
+                android:textColor="@color/m_icon_tint"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@id/ivPause2"
+                app:layout_constraintStart_toEndOf="@id/bannerPlaceHolderCollapse"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSongDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="dolar lporem"
+                android:textColor="@color/m_icon_tint"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@id/ivPause2"
+                app:layout_constraintStart_toEndOf="@id/bannerPlaceHolderCollapse"
+                app:layout_constraintTop_toBottomOf="@id/tvSongTitle" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivPause2"
+            style="@style/App.Icon.Normal"
+            android:layout_gravity="start|center"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/ic_pause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivNext2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/m_icon_tint" />
+
+        <ImageView
+            android:id="@+id/ivNext2"
+            style="@style/App.Icon.Normal"
+            android:layout_gravity="start|center"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/ic_next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/m_icon_tint" />
+
+        <ImageView
+            android:id="@+id/ivCollapse"
+            style="@style/App.Icon.Normal"
+            android:layout_gravity="start|center"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_down"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/m_icon_tint" />
+
+        <ImageView
+            android:id="@+id/ivMore"
+            style="@style/App.Icon.Normal"
+            android:layout_gravity="end|center"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/ic_more_vert"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/m_icon_tint" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/bannerPlaceHolderExpand"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@id/expand_control_view"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar"
+        tools:background="@drawable/music_playing_progress" />
+
+
+    <View
+        android:id="@+id/tabPlaceHolder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tabLayoutHeight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:background="@drawable/music_playing_progress" />
+
+
+</merge>

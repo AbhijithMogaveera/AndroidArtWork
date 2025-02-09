@@ -56,7 +56,7 @@ fun CylinderGraphComp() {
     var isAnySectionSelected by remember {
         mutableStateOf(false)
     }
-    Column(modifier = Modifier.fillMaxWidth()) {
+    Column(modifier = Modifier.fillMaxWidth().systemBarsPadding()) {
         var view: CylinderGraphView? = null
         Row(
             horizontalArrangement = Arrangement.End,

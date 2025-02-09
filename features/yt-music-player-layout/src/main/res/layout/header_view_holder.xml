@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/color_grey"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:id="@+id/iconLeft"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center|start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="ABHIITH MOGAVEERA" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Speed dial" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iconRight"
+        android:layout_width="40dp"
+        android:layout_gravity="center"
+        android:rotation="270"
+        android:padding="10dp"
+        app:tint="@color/white"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_down" />
+</LinearLayout>
