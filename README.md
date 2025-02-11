@@ -1,7 +1,8 @@
 # Android Art Work
 
 ## 1) YTMusic Sliding panel layout clone
-https://github.com/user-attachments/assets/a9a4e141-1477-4700-ba39-553b16bc7617
+https://github.com/user-attachments/assets/8bf41684-ec44-43b1-825c-08ed4861f741
+
 
 ## 2) MIUI Cylinder Graph Clone     
 https://github.com/user-attachments/assets/5a3d2d11-6df0-4eae-b5df-aeeca9a97976
